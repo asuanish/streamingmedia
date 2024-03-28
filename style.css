@@ -67,11 +67,11 @@ input:checked ~ label:not(.steps) span:after {
     display: none;
   }
 } */
-html{
+html {
   background-color: #020659;
   color: #fff;
 }
- body {
+body {
   margin: 0;
   font-family: "Verdana", serif;
 }
@@ -167,7 +167,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 500px;   /* check max height for dropdown */
+  max-height: 500px; /* check max height for dropdown */
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -248,4 +248,4 @@ a {
   .section-split a {
     width: 50%;
   }
-} */
+}
