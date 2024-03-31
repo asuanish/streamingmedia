@@ -7,66 +7,124 @@
     <link href="style.css" rel="stylesheet" />
     <title>MuzakMaker- Smooth Jazz</title>
   </head>
+
   <body>
-    <!-- <header>
+    <header>
       <h1>Smooth Jazz</h1>
       <p>
         This station is dedicated to the soothing sounds of smooth jazz. This
         genre of commercially oriented crossover jazz became dominant in the
         1980s and early 1990s.
       </p>
-    </header> -->
-    <header class="header">
-      <a href="/" class="logo">MuzakMaker</a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="menu">
-        <li>
-          <a href="/">MuzakMaker</a>
-        </li>
-        <li>
-          <a href="#trending"
-            >Trending <br />
-            Songs</a
-          >
-        </li>
-        <li>
-          <a href="#playlists"
-            >Your <br />
-            Playlists</a
-          >
-        </li>
-        <li>
-          <a href="#curated"
-            >Curated <br />
-            Playlist</a
-          >
-        </li>
-        <li>
-          <a href="user"
-            ><img src="images/duke-silver.png" alt="user profile picture"
-          /></a>
-        </li>
-      </ul>
+      <nav>
+        <input type="checkbox" id="navIcon" />
+        <label id="menu-icon" for="navIcon"><span></span></label>
+        <ul id="menu">
+          <li id="logo">MuzakMaker</li>
+          <li>
+            <a href="#trending">Trending<br />Songs</a>
+          </li>
+          <li>
+            <a href="#playlists">Your<br />Playlists</a>
+          </li>
+          <li>
+            <a href="#curated">Curated<br />Playlists</a>
+          </li>
+          <li>
+            <a
+              ><img
+                src="images/duke-silver.png"
+                alt="duke silver soulfully playing his saxophone"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-      <section>
-        <h2>Smooth Jazz</h2>
-        <p>
-          This station is dedicated to the soothing sounds of smooth jazz. This
-          genre of commercially oriented crossover jazz became dominant in the
-          1980s and early 1990s.
-        </p>
-      </section>
-      <section>
-        <h3>Trending Songs</h3>
-        <a href="#">
-          <span>Artist Cali</span>
-          <img src="./images/aloma-cover.png" alt="bird" />
-        </a>
+      <section id="trending">
+        <h2>Trending Songs</h2>
+        <div id="trendingScroll">
+          <section>
+            <div>
+              <h3>Aloma</h3>
+              <dl>
+                <dt>Artist</dt>
+                <dd>Cali</dd>
+              </dl>
+            </div>
+            <img
+              src="images/aloma-cover.png"
+              alt="white dove on black background"
+            />
+            <audio controls src="audio/aloma.mp3"></audio>
+          </section>
+
+          <section>
+            <div>
+              <h3>My Road</h3>
+              <dl>
+                <dt>Artist</dt>
+                <dd>Nesterouk</dd>
+              </dl>
+            </div>
+            <img
+              src="images/my-road-cover.png"
+              alt="road stretching into distance towards blue sky and mountains"
+            />
+            <audio controls src="audio/my-road.mp3"></audio>
+          </section>
+
+          <section>
+            <div>
+              <h3>Papaya</h3>
+              <dl>
+                <dt>Artist</dt>
+                <dd>Dredstudio</dd>
+              </dl>
+            </div>
+            <img
+              src="images/papaya-cover.png"
+              alt="half of a papaya against bright green background"
+            />
+            <audio controls src="audio/papaya.mp3"></audio>
+          </section>
+
+          <section>
+            <div>
+              <h3>Smoothies</h3>
+              <dl>
+                <dt>Artist</dt>
+                <dd>Black Rhomb</dd>
+              </dl>
+            </div>
+            <img
+              src="images/smoothies-cover.png"
+              alt="bananas, a bowl of strawberries, a pineapple, oranges, and raspberries surround a pink smoothie on white surface against pale pink background"
+            />
+            <audio controls src="audio/smoothies.mp3"></audio>
+          </section>
+
+          <section>
+            <div>
+              <h3>Successful Performance</h3>
+              <dl>
+                <dt>Artist</dt>
+                <dd>Ricky Bombino</dd>
+              </dl>
+            </div>
+            <img
+              src="images/successful-performance-cover.png"
+              alt="excited young white male in red sweater and black jeans with fists clenched against a faded light blue cinderblock wall"
+            />
+            <audio controls src="audio/successful-performance.mp3"></audio>
+          </section>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <small>Copyright 2022 Smooth Jazz</small>
+    </footer>
   </body>
 </html>
