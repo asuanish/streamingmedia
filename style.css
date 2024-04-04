@@ -16,7 +16,7 @@ header {
 
 header h1 {
   font-weight: 700;
-  font-size: 20pt;
+  font-size: 1.25em;
   color: #ffffff;
   margin-bottom: 0;
   grid-row-start: 2;
@@ -39,7 +39,7 @@ header p {
 header p,
 li {
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 1em;
   color: #ffffff;
 }
 
@@ -72,7 +72,6 @@ input {
   display: block;
   height: 2px;
   position: relative;
-  transition: background-color 0.2s ease-out;
   width: 18px;
 }
 
@@ -83,7 +82,6 @@ input {
   display: block;
   height: 100%;
   position: absolute;
-  transition: all 0.2s ease-out;
   width: 100%;
 }
 
@@ -146,7 +144,6 @@ nav li a {
 #menu {
   overflow: hidden;
   max-height: 60px;
-  transition: max-height 0.2s ease-out;
   margin: 0;
   padding: 0;
   background-color: #030a8c;
@@ -171,14 +168,14 @@ main {
 
 h2 {
   font-weight: 700;
-  font-size: 20pt;
+  font-size: 1em;
   color: #590242;
   margin: 0 0 10px 25px;
   text-transform: uppercase;
   padding-top: 30px;
 }
 
-/* scroll container */
+/* Scroll container */
 #trendingScroll,
 #yourPlaylistScroll,
 #curatedScroll {
@@ -189,7 +186,7 @@ h2 {
 
 #trendingScroll h3 {
   font-weight: 700;
-  font-size: 15pt;
+  font-size: 1em;
   color: #590242;
   text-transform: uppercase;
   margin: 5px 5px 0 10px;
@@ -267,7 +264,7 @@ audio::-webkit-media-controls-enclosure {
   background-color: #020659;
 }
 
-/* playlists section */
+/* Playlists section */
 #yourPlaylistScroll {
   background-color: #2699fb;
 }
@@ -305,7 +302,7 @@ audio::-webkit-media-controls-enclosure {
 #yourPlaylistScroll h3,
 #curatedScroll h3 {
   font-weight: 700;
-  font-size: 16pt;
+  font-size: 1em;
   color: #ffffff;
   text-transform: uppercase;
   margin: 5px;
@@ -314,7 +311,7 @@ audio::-webkit-media-controls-enclosure {
 #yourPlaylistScroll p,
 #curatedScroll p {
   font-weight: 400;
-  font-size: 14pt;
+  font-size: 1em;
   color: #ffffff;
   margin: 5px;
 }
@@ -337,7 +334,26 @@ audio::-webkit-media-controls-enclosure {
 #curatedScroll::-webkit-scrollbar-thumb:hover {
   background-color: #ffffff;
 }
-
+.more {
+  background-color: #590242;
+  color: #ffffff;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin: 10px 0 30px 32px;
+}
+.more:hover {
+  background-color: #020659;
+}
+footer {
+  clear: both;
+  background-color: #ffffff;
+  color: #590242;
+  font-weight: bold;
+  text-align: center;
+}
 @media screen and (min-width: 834px) {
   body {
     margin: 0 auto;
@@ -368,7 +384,7 @@ audio::-webkit-media-controls-enclosure {
     background-color: #030a8c;
   }
 
-  /* hide hamburger icon when big screen */
+  /* Hide hamburger */
   #menu-icon span,
   input {
     display: none;
@@ -378,7 +394,7 @@ audio::-webkit-media-controls-enclosure {
     z-index: 0;
   }
 
-  /* put playlists next to each other */
+  /* Put playlists next to each other */
   #playlists {
     clear: both;
     display: grid;
@@ -386,7 +402,7 @@ audio::-webkit-media-controls-enclosure {
     grid-template-rows: 75px 500px 75px;
   }
 
-  /* change playlists scrolls to vertical */
+  /* Switches to y-axis scroll from x-axis */
   #yourPlaylistScroll,
   #curatedScroll {
     display: flex;
@@ -412,5 +428,13 @@ audio::-webkit-media-controls-enclosure {
   #yourPlaylistScroll section,
   #curatedScroll section {
     display: flex;
+  }
+  #playlists .more {
+    grid-row: 3;
+  }
+
+  .more {
+    float: right;
+    margin-right: 20px;
   }
 }
